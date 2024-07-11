@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="Pokemon" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionMain" destination="mM7-Uv-DrD" id="DdU-bk-u3c"/>
+                <outlet property="controlMain" destination="nG5-BU-X0i" id="0xm-jI-kPa"/>
+                <outlet property="view" destination="cmY-sf-RQL" id="onO-Y6-srA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cmY-sf-RQL">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mM7-Uv-DrD">
+                    <rect key="frame" x="0.0" y="114" width="393" height="704"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="IZY-1w-ueJ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessId" value="collectionMain"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nG5-BU-X0i">
+                    <rect key="frame" x="12" y="71" width="369" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <segments>
+                        <segment title="Collections"/>
+                        <segment title="My Pets"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" systemColor="systemOrangeColor"/>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="E43-tm-Nss"/>
+            <color key="backgroundColor" red="0.1019607843" green="0.12549019610000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nG5-BU-X0i" firstAttribute="leading" secondItem="E43-tm-Nss" secondAttribute="leading" constant="12" id="2Yk-GL-gYz"/>
+                <constraint firstItem="mM7-Uv-DrD" firstAttribute="top" secondItem="nG5-BU-X0i" secondAttribute="bottom" constant="12" id="QPu-hA-cuy"/>
+                <constraint firstItem="E43-tm-Nss" firstAttribute="trailing" secondItem="nG5-BU-X0i" secondAttribute="trailing" constant="12" id="Zan-2C-Qa1"/>
+                <constraint firstItem="mM7-Uv-DrD" firstAttribute="leading" secondItem="E43-tm-Nss" secondAttribute="leading" id="ch7-uI-pAw"/>
+                <constraint firstItem="E43-tm-Nss" firstAttribute="bottom" secondItem="mM7-Uv-DrD" secondAttribute="bottom" id="dDW-Xr-7MO"/>
+                <constraint firstItem="nG5-BU-X0i" firstAttribute="top" secondItem="E43-tm-Nss" secondAttribute="top" constant="12" id="m4h-AS-4Db"/>
+                <constraint firstItem="E43-tm-Nss" firstAttribute="trailing" secondItem="mM7-Uv-DrD" secondAttribute="trailing" id="rRU-xv-sO7"/>
+            </constraints>
+            <point key="canvasLocation" x="-1159.5419847328244" y="-574.64788732394368"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
